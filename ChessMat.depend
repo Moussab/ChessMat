@@ -1,0 +1,39 @@
+# depslib dependency file v1.0
+1486337257 source:c:\users\pc\desktop\prog echec\chessmat\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	"Board.h"
+	"initialisation.c"
+	"affichage.c"
+	"regle_de_deplacement.c"
+
+1486333291 c:\users\pc\desktop\prog echec\chessmat\board.h
+
+1486333627 c:\users\pc\desktop\prog echec\chessmat\initialisation.c
+	"Board.h"
+
+1486329313 c:\users\pc\desktop\prog echec\chessmat\affichage.c
+	"Board.h"
+
+1486245610 c:\users\pc\desktop\prog echec\chessmat\regle_de_deplacement.c
+
+1486385855 source:f:\thamer\chessmat\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	"Board.h"
+	"initialisation.c"
+	"affichage.c"
+	"regle_de_deplacement.c"
+
+1486333291 f:\thamer\chessmat\board.h
+
+1486333627 f:\thamer\chessmat\initialisation.c
+	"Board.h"
+
+1486388477 f:\thamer\chessmat\affichage.c
+	"Board.h"
+
+1486245610 f:\thamer\chessmat\regle_de_deplacement.c
+

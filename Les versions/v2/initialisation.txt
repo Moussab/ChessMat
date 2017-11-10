@@ -1,0 +1,52 @@
+
+
+#ifndef BOARD_H_INCLUDED
+#define BOARD_H_INCLUDED
+
+typedef struct configuration{
+	char board[8][8];		// L'echiquier
+	int val;			// Estimation de la configuration
+	int turn;			// Vau 1 si c'est le toure des blac, et 0 si c'est le toure des noires
+}configuration;
+
+bool roque = false; // Vau false si le roque n'est pas encore realise, true s'il est realise
+
+#endif // BOARD_H_INCLUDED
+
+
+/* Intialise la disposition des pieces dans la configurationiguration initiale configuration */
+void init(  configuration *configuration )
+{
+   	int i, j;
+
+    	for (i=0; i<8; i++)
+		for (j=0; j<8; j++)
+			configuration->board[i][j] = 0;	// Les cases vides sont initialisées avec 0
+
+	configuration->board[0][0] =  't';
+	configuration->board[0][1] =  'c';
+	configuration->board[0][2] = 'f';
+	configuration->board[0][3] =  'n';
+	configuration->board[0][4] =  'r';
+	configuration->board[0][5] =  'f';
+	configuration->board[0][6] = 'c';
+	configuration->board[0][7] =  't';
+
+	for (j=0; j<8; j++) {
+		configuration->board[1][j] = 'p';
+ 		configuration->board[6][j] = -'p';
+		configuration->board[7][j] = -configuration->board[0][j];
+	}
+/*
+	configuration->xrB = 0;
+	configuration->yrB = 4;
+	configuration->xrN = 7;
+	configuration->yrN = 4;
+
+	configuration->roqueB = 'r';
+	configuration->roqueN = 'r';
+*/
+	configuration->val = 0;
+
+} // init
+

@@ -1,0 +1,12 @@
+#ifndef BOARD_H_INCLUDED
+#define BOARD_H_INCLUDED
+
+typedef struct configuration{
+	char board[8][8];		// L'echiquier
+	int val;			// Estimation de la configuration
+	int turn;			// Vau 1 si c'est le toure des blac, et 0 si c'est le toure des noires
+}configuration;
+
+bool roque = false; // Vau false si le roque n'est pas encore realise, true s'il est realise
+
+#endif // BOARD_H_INCLUDED
